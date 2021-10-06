@@ -11,5 +11,8 @@ axios_1["default"].get(url).then(function (response) {
     var id = todo.id;
     var title = todo.title;
     var completed = todo.completed;
-    console.log(id + "," + title + "," + completed);
+    logTodo(id, title, completed);
 });
+var logTodo = function (id, title, completed) {
+    console.log(id + "," + title + "," + completed);
+};
